@@ -1,0 +1,112 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Varela Round', sans-serif;
+  color: #FFF;
+}
+
+body {
+  background-color: #067275de;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+#timer-container {
+  margin: 10px auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-size: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  #timer-container {
+    font-size: 50px;
+  }
+}
+
+#timer-container #timer-label {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 5vw;
+}
+
+@media screen and (max-width: 600px) {
+  #timer-container #timer-label {
+    letter-spacing: 3vw;
+  }
+}
+
+#timer-container #time-left {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 3vw;
+  text-shadow: -1px 5px 20px rgba(200, 200, 200, 0.808);
+}
+
+@media screen and (max-width: 600px) {
+  #timer-container #time-left {
+    letter-spacing: 1vw;
+  }
+}
+
+#timer-container #start-pause,
+#timer-container #reset,
+#timer-container #stop {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  #timer-container #start-pause,
+  #timer-container #reset,
+  #timer-container #stop {
+    font-size: 30px;
+  }
+}
+
+#timer-container #stop {
+  margin: 0 75px;
+}
+
+@media screen and (max-width: 600px) {
+  #timer-container #stop {
+    margin: 0 50px;
+  }
+}
+
+#break-container,
+#session-container {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  #break-container,
+  #session-container {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+}
+
+#session-length,
+#break-length {
+  width: 45px;
+  margin: 0 10px;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

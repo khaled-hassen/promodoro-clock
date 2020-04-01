@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Promodoro Clock</title>
+    <link rel="shortcut icon" href="icons/clock.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <section id="break-container" class="col-sm">
+                <div id="break-label">Break Time</div>
+                <button id="break-increment">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div id="break-length"></div>
+                <button id="break-decrement">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </section>
+
+            <section id="session-container" class="col-sm">
+                <div id="session-time">Session Time</div>
+                <button id="session-increment">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div id="session-length"></div>
+                <button id="session-decrement">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </section>
+        </div>
+    </div>
+
+    <section id="timer-container">
+        <p id="timer-label">Session</p>
+        <p id="time-left">25:00</p>
+        <button id="start-pause">
+            <i class="fas fa-play"></i>
+            <i class="fas fa-pause"></i>
+        </button>
+        <button id="stop">
+            <i class="fas fa-stop"></i>
+        </button>
+        <button id="reset">
+            <i class="fas fa-undo-alt"></i>
+        </button>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

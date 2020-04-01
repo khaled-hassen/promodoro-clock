@@ -1,0 +1,94 @@
+$mobile-width: 600px;
+$mobile-screen: "screen and (max-width: #{$mobile-width})";
+
+* {
+    user-select: none;
+    font-family: 'Varela Round', sans-serif;
+    color: #FFF;
+}
+
+body {
+    background-color: #067275de;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#timer-container {
+    margin: 10px auto 0;
+    width: fit-content;
+    text-align: center;
+    font-size: 100px;
+
+    @media #{$mobile-screen} {
+        font-size: 50px;
+    }
+
+    #timer-label {
+        margin: 0;
+        text-align: center;
+        letter-spacing: 5vw;
+        
+        @media #{$mobile-screen}  {
+            letter-spacing: 3vw;
+        }
+    }
+
+    #time-left {
+        margin: 0;
+        text-align: center;
+        letter-spacing: 3vw;
+        text-shadow: -1px 5px 20px rgba(200, 200, 200, 0.808);
+
+        @media #{$mobile-screen} {
+            letter-spacing: 1vw;
+        }
+    }
+
+    #start-pause,
+    #reset,
+    #stop {
+        font-size: 50px;
+
+        @media #{$mobile-screen} {
+            font-size: 30px;
+        }
+    }
+
+    #stop {
+        margin: 0 75px;
+
+        @media #{$mobile-screen}  {
+            margin: 0 50px;
+        }
+    }
+}
+
+#break-container,
+#session-container {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+
+    @media #{$mobile-screen} {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+}
+
+#session-length,
+#break-length {
+    width: 45px;
+    margin: 0 10px;
+    display: inline-block;
+}
